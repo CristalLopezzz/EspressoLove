@@ -1,0 +1,40 @@
+﻿@page
+@model MyApp.Namespace.HomepageModel
+@{
+    ViewData["Title"] = "Espresso Love";
+}
+<!DOCTYPE html>
+<html lang= "en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="logo">
+
+        </div>
+
+    </div>
+
+    <div class="info-box">
+        <h2>Deal of the Day</h2>
+        <p>@Model.DealofTheDay</p>
+
+        <h2>Business Hours</h2>
+        <p>@Model.BusinessHours</p>
+
+        <a href= "" class="place-order">Place Order</a>
+    </div>
+
+    <div class= "nav-btns">
+        <a href="Menu.cshtml" class="menu-btn">Menu</a>
+        <a href= "MyRewards.cshtml" class="myRewards-btn">My Rewards</a>
+    </div>
+</body>
+
+</html>
