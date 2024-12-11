@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EspressoLove")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8efd4b7326908eac231cd39a0ba3e8da8930de0f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a79d6daac036a223b1b1298034580d87cdd514c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("EspressoLove")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EspressoLove")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

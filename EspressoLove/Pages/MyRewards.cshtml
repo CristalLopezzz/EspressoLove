@@ -1,4 +1,40 @@
 ﻿@page
 @model MyApp.Namespace.MyRewardsModel
 @{
+    ViewData["Title"] = "My Rewards";
 }
+
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <div class="container">
+        <h1>My Rewards</h1>
+
+        @if (!string.IsNullOrEmpty(Model.PhoneNumber))
+        {
+            <p>Phone Number: @Model.PhoneNumber</p>
+            <p> Your Rewards points balance: @Model.Points</p>
+        }
+
+        else
+        {
+            <p>Enter your phone number to see your rewards points:</p>
+            <form method ="post">
+                <label for= "Phone Number:">Phone Number:</label>
+                <input type="text" id="PhoneNumber" name="PhoneNumber" placeholder="Enter phone number" required>
+                <button type="submit">Check Points</button>
+            </form>
+
+        }
+    </div>
+    <div class= "nav-btns">
+                <a href="/Index" class="home-btn">Home</a>
+                <a href="/Menu" class="menu-btn">Menu</a>
+    </div>
+</body>
+    

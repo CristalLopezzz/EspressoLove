@@ -13,27 +13,24 @@
 </head>
 
 <body>
-    <div class="container">
+<header class = "header">
+    <img src="/images/EspressoLove.png" alt="Espresso Love Logo" class="logo">
+</header>
+    <div class="containerHome">
 
-        <div class="logo">
+        <div class="info-box">
+            <h3>Deal of the Day</h3>
+            <p>@Model.DealofTheDay</p>
 
+            <h3>Business Hours</h3>
+            <p>@Model.BusinessHours</p>
+
+         <a href= "/Menu" class="placeOrder-btn">Place Order</a>
         </div>
-
     </div>
-
-    <div class="info-box">
-        <h2>Deal of the Day</h2>
-        <p>@Model.DealofTheDay</p>
-
-        <h2>Business Hours</h2>
-        <p>@Model.BusinessHours</p>
-
-        <a href= "" class="place-order">Place Order</a>
-    </div>
-
     <div class= "nav-btns">
-        <a href="Menu.cshtml" class="menu-btn">Menu</a>
-        <a href= "MyRewards.cshtml" class="myRewards-btn">My Rewards</a>
+        <a href="/Menu" class="menu-btn">Menu</a>
+        <a href= "/MyRewards" class="myRewards-btn">My Rewards</a>
     </div>
 </body>
 

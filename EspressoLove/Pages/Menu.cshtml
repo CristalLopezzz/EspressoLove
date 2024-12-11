@@ -1,4 +1,44 @@
 ﻿@page
 @model MyApp.Namespace.MenuModel
 @{
+    ViewData["Title"] = "Menu";
 }
+
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+</head>
+
+<body>
+    <header class="header">
+    <p> Order ahead pick up in-store ONLY </p>
+    </header>
+
+    <main>
+        <section class="menu-selection">
+            <h2>Menu</h2>
+            <div class="menu-items">
+                @foreach (var item in Model.MenuItems)
+                {
+                    <div class="menu-item">
+                        <h3>@item.Name</h3>
+                        <p>@item.Description</p>
+                        <p>@item.Size</p>
+                        <p>@item.Style</p>
+                        <p>@item.Price</p>
+                        <img src="@item.Image" alt="@item.Name" />
+                    </div>
+                }
+            </div>
+    </section> 
+    <div class= "nav-btns">
+        <a href="/Index" class="home-btn">Home</a>
+        <a href= "/MyRewards" class="myRewards-btn">My Rewards</a>
+    </div>
+    </main>
+</body>
+        
+</html>

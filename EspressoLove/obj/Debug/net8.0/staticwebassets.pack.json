@@ -13,6 +13,26 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/workspaces/EspressoLove/EspressoLove/wwwroot/images/EspressoLove.png",
+      "PackagePath": "staticwebassets/images/EspressoLove.png"
+    },
+    {
+      "Id": "/workspaces/EspressoLove/EspressoLove/wwwroot/images/EspressoLoveSpecial.jpg",
+      "PackagePath": "staticwebassets/images/EspressoLoveSpecial.jpg"
+    },
+    {
+      "Id": "/workspaces/EspressoLove/EspressoLove/wwwroot/images/cappuccino.jpg",
+      "PackagePath": "staticwebassets/images/cappuccino.jpg"
+    },
+    {
+      "Id": "/workspaces/EspressoLove/EspressoLove/wwwroot/images/dalgona.jpg",
+      "PackagePath": "staticwebassets/images/dalgona.jpg"
+    },
+    {
+      "Id": "/workspaces/EspressoLove/EspressoLove/wwwroot/images/latte.jpg",
+      "PackagePath": "staticwebassets/images/latte.jpg"
+    },
+    {
       "Id": "/workspaces/EspressoLove/EspressoLove/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
