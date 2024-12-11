@@ -6,6 +6,7 @@
 
 <!DOCTYPE html>
 <html lang= "en">
+    <!--Displays title of page name-->
 <head>
     <meta charset="utf-8"/>
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,8 @@
     <div class="container">
         <h1>My Rewards</h1>
 
+        <!--If else condition to allow users to insert their phone number-->
+        <!--condition will depend on the phone number they insert-->
         @if (!string.IsNullOrEmpty(Model.PhoneNumber))
         {
             <p>Phone Number: @Model.PhoneNumber</p>
@@ -32,6 +35,7 @@
 
         }
     </div>
+    <!--Separate div class to create organization of buttons to other pages-->
     <div class= "nav-btns">
                 <a href="/Index" class="home-btn">Home</a>
                 <a href="/Menu" class="menu-btn">Menu</a>

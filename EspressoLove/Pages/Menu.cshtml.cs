@@ -12,6 +12,7 @@ namespace MyApp.Namespace
         {
             MenuItems = new List<MenuItem>
             {
+                //List of menu items
                 new MenuItem
                 {
                     Name = "Espresso Love Special",
@@ -52,7 +53,7 @@ namespace MyApp.Namespace
                 },
             };
         }
-        }
+        } //I would've added an "add to cart" feature-->
         public class MenuItem
         {
             public string Name { get; set; }

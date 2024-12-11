@@ -12,15 +12,16 @@
     <title>@ViewData["Title"]</title>
 </head>
 
-<body>
+<body class="menu-page">
     <header class="header">
     <p> Order ahead pick up in-store ONLY </p>
     </header>
 
     <main>
         <section class="menu-selection">
-            <h2>Menu</h2>
-            <div class="menu-items">
+            <h1>Menu</h1>
+            <div class="menu-container">
+                <!--For loop that will display all the items provided-->
                 @foreach (var item in Model.MenuItems)
                 {
                     <div class="menu-item">
@@ -30,10 +31,11 @@
                         <p>@item.Style</p>
                         <p>@item.Price</p>
                         <img src="@item.Image" alt="@item.Name" />
-                    </div>
+                </div>
                 }
             </div>
     </section> 
+    <!--Div class for buttons-->
     <div class= "nav-btns">
         <a href="/Index" class="home-btn">Home</a>
         <a href= "/MyRewards" class="myRewards-btn">My Rewards</a>
